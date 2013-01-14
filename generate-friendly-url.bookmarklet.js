@@ -1,5 +1,8 @@
 function generateFriendlierURL() {
-  var headingText = jQuery('h1').text();
+  
+  var headingText = document.title;
+  headingText = headingText.replace(/\|.*$/, ''); // removes anything after a pipe, eg '| drupal.org'
+  
   // adapted from https://github.com/riverside/friendurl/blob/master/jquery.friendurl.js
   headingText = headingText.toLowerCase() // change everything to lowercase
     .replace(/^\s+|\s+$/g, "") // trim leading and trailing spaces21	
