@@ -1,5 +1,5 @@
-Makes a descriptive URL for the current page:
+Makes a descriptive URL for the current page.
 
-http://drupal.org/node/288214  ==> http://drupal.org/node/288214#referencing-node-not-set.
+![Screenshot](http://dl-web.dropbox.com/u/8325927/screenshots/NJTPYR-2013.1.14-14.36.png)
 
-Visit http://bl.ocks.org/4532260 to install it.
+To install, visit http://bl.ocks.org/4532260
