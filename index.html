@@ -1,5 +1,5 @@
 <html>
-  <title>descriptive-url.bookmarklet.js</title>
+  <title>Descriptive URL bookmarklet</title>
   <head>
     <style type="text/css">
       .button-wrapper {
@@ -51,23 +51,56 @@
 </head>
 <body>
 
-<p>To install the bookmarklet, drag it to your bookmark toolbar:</p>
-<div class="button-wrapper">
-<a class="button" href="javascript:(function(){var s = document.createElement('script');s.src='https://gist.github.com/raw/4532260/descriptive-url.bookmarklet.js';document.body.appendChild(s);})();">Descriptive URL</a>
-</div>
+<section data-markdown>
 
-The Descriptive URL bookmarklet is helpful if the URL you would like to paste is too short.
-Makes a descriptive URL for the current page.
+# Descriptive URL bookmarklet
 
+The Descriptive URL bookmarklet is helpful if the URL you would like to paste is too short. It makes a descriptive URL for the current page.
 
+To install the bookmarklet, drag this link to your bookmark toolbar:
 
-</body>
-</html>
+<div class="button-wrapper"> <a class="button" href="javascript:(function(){var s = document.createElement('script');s.src='https://gist.github.com/raw/4532260/descriptive-url.bookmarklet.js';document.body.appendChild(s);})();">Descriptive URL</a> </div>
 
-To install the descriptive-url.bookmarklet.js, drag the following link to your browser's bookmark bar:
+## How to use it
 
+Go to a site with overly short URLs (see examples below), and click on the bookmarklet to append the page title to the end of the URL. Voila!
 
-<img src="http://dl-web.dropbox.com/u/8325927/screenshots/NJTPYR-2013.1.14-14.36.png" alt="Screenshot for descriptive-url.bookmarklet.js" />
+![Screenshot for descriptive-url.bookmarklet.js](http://dl-web.dropbox.com/u/8325927/screenshots/NJTPYR-2013.1.14-14.36.png)
+
+## Where you might use it
+
+Here are some more examples of websites where it's useful:
+
+<ul>
+<li><a href="http://www.youtube.com/watch?v=v-pyuaThp-c#doodling-in-math-class-connecting-dots-youtube">http://www.youtube.com/watch?v=v-pyuaThp-c#doodling-in-math-class-connecting-dots-youtube</a></li>
+<li><a href="http://ihackernews.com/comments/5043231#hacker-news-mobile-devopssysadmin-cheatsheet">http://ihackernews.com/comments/5043231#hacker-news-mobile-devopssysadmin-cheatsheet</a></li>
+<li><a href="https://github.com/dergachev/chrome-xpath-link/issues/2#create-a-bookmarklet">https://github.com/dergachev/chrome-xpath-link/issues/2#create-a-bookmarklet</a></li>
+<li><a href="http://news.ycombinator.com/item?id=5043231#devopssysadmin-cheatsheet">http://news.ycombinator.com/item?id=5043231#devopssysadmin-cheatsheet</a></li>
+<li><a href="http://drupal.org/node/1427148#meta-how-should-joke-modules-be-handled">http://drupal.org/node/1427148#meta-how-should-joke-modules-be-handled</a></li>
+<li><a href="https://gist.github.com/4331769#rule-of-thirds-bookmarklet">https://gist.github.com/4331769#rule-of-thirds-bookmarklet</a></li>
+<li><a href="http://bl.ocks.org/4360892#u.s.-airports">http://bl.ocks.org/4360892#u.s.-airports</a></li>
+<li><a href="http://www.redmine.org/issues/12778#defect-12778-upgrade-to-rails-3.2.11-redmine">http://www.redmine.org/issues/12778#defect-12778-upgrade-to-rails-3.2.11-redmine</a></li>
+<li><a href="https://twitter.com/dergachev/status/290914183220981760#twitter-dergachev-remembering-aaron-swarz-the-...">https://twitter.com/dergachev/status/290914183220981760#twitter-dergachev-remembering-aaron-swarz-the-...</a></li>
+<li><a href="https://docs.google.com/spreadsheet/ccc?key=0AonYZs4MzlZbdERaRzgxaUcwYXVRZFpaR3ZrekREb2c&hl=en&authkey=CIretNoB#corruption-index">https://docs.google.com/spreadsheet/ccc?key=0AonYZs4MzlZbdERaRzgxaUcwYXVRZFpaR3ZrekREb2c&hl=en&authkey=CIretNoB#corruption-index</a></li>
+<li><a href="https://issues.apache.org/jira/browse/SOLR-4305#solr-4305-xss-vulnerability-in-solr-/admin/analysis.jsp-asf-jira">https://issues.apache.org/jira/browse/SOLR-4305#solr-4305-xss-vulnerability-in-solr-/admin/analysis.jsp-asf-jira</a></li>
+<li><a href="http://www.craigslist.org/about/best/inl/2434325556.html#best-of-craigslist-ugly-mean-cat-free">http://www.craigslist.org/about/best/inl/2434325556.html#best-of-craigslist-ugly-mean-cat-free</a></li>
+<li><a href="http://www.flickr.com/photos/54771108@N07/6959604522/#circus-clown">http://www.flickr.com/photos/54771108@N07/6959604522/#circus-clown</a></li>
+</ul>
+
+## Get the source code
+
+To get the source code, visit <a href="https://gist.github.com/4532260#descriptive-url.bookmarklet.js">https://gist.github.com/4532260#descriptive-url.bookmarklet.js</a>
+</section>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+<script>
+  // adapted from http://blog.harakys.com/blog/2012/02/21/embed-markdown-into-your-html/
+  // see also https://gist.github.com/1343518
+  [].forEach.call( document.querySelectorAll('[data-markdown]'), function  fn(elem){
+    var html      = (new Showdown.converter()).makeHtml(elem.innerHTML);
+    elem.innerHTML = html;
+  });
+</script>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -80,3 +113,5 @@ To install the descriptive-url.bookmarklet.js, drag the following link to your b
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+</body>
+</html>
