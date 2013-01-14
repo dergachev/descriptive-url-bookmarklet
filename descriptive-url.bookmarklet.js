@@ -9,7 +9,7 @@ function descriptiveURL() {
   headingText = headingText.toLowerCase() // change everything to lowercase
     .replace(/^\s+|\s+$/g, "") // trim leading and trailing spaces
     .replace(/[\s]+/g, "-") // change all spaces to a hyphen
-    .replace(/[^a-z0-9_.-]+/g, "") // remove all non-cyrillic, non-numeric characters except: hyphen, underscore, period
+    .replace(/[^a-z0-9_./-]+/g, "") // remove all non-cyrillic, non-numeric characters except: hyphen, underscore, period, slash
     .replace(/[-]+/g, "-") // replace multiple instances of the hyphen with a single instance
     .replace(/^-+|-+$/g, "") // trim leading and trailing hyphens
     .replace(/[-]+/g, '-');	
