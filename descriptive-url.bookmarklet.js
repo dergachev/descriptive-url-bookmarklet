@@ -1,4 +1,4 @@
-function getFriendlyURL() {
+function descriptiveURL() {
   
   var headingText = document.title;
   headingText = headingText.replace(/\|.*$/, ''); // removes anything after a pipe, eg '| drupal.org'
@@ -14,4 +14,4 @@ function getFriendlyURL() {
   // console.log(headingText); 
   window.location.hash = headingText;
 }
-getFriendlyURL();
+descriptiveURL();

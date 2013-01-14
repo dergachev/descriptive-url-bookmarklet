@@ -1,4 +1,4 @@
-Makes a friendly URL for the current page:
+Makes a descriptive URL for the current page:
 
 http://drupal.org/node/288214  ==> http://drupal.org/node/288214#referencing-node-not-set.
 
